@@ -172,6 +172,7 @@
     moneys.forEach((m) => {
       const div = document.createElement('div');
       div.classList.add('money');
+      div.id = `money-${m.cost}`
       div.textContent = m.name;
       div.addEventListener('click', ()=>{
         money+= m.cost;
