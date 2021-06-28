@@ -35,12 +35,16 @@
     const getProductsD = document.getElementById("getProducts");
     const productsD = document.getElementById("products");
 
-    const drink0 = new Drink("pokari", 150, 3);
-    const drink1 = new Drink("お茶", 100, 5, "hot");
-    const drink2 = new Drink("beel", 300, 5);
-    const drink3 = new Drink("cocoa", 130, 5, "hot");
+    const drink0 = new Drink("お茶", 100, 2);
+    const drink1 = new Drink("紅茶", 130, 2);
+    const drink2 = new Drink("ポカリ", 150, 2);
+    const drink3 = new Drink("ビール", 300, 2);
+    const drink4 = new Drink("hot茶", 100, 2, "hot");
+    const drink5 = new Drink("コンポタ", 130, 2, "hot");
+    const drink6 = new Drink("ココア", 150, 2, "hot");
+    const drink7 = new Drink("味噌汁", 300, 2, "hot");
 
-    const drinks = [drink0, drink1, drink2, drink3];
+    const drinks = [drink0, drink1, drink2, drink3, drink4, drink5, drink6, drink7];
 
     // お金
     const oneThousand = new Money("1000円", 1000);
@@ -50,7 +54,7 @@
 
     let moneys = [oneThousand, oneHundred, fifth, ten];
 
-    const num = 16;
+    const num = 12;
     for(let i=0; i<num; i++){
       const drink = new Drink();
       drinks.push(drink);
