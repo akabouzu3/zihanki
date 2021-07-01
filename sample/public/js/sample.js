@@ -36,15 +36,15 @@
     const productsD = document.getElementById("products");
 
     const drink0 = new Drink("お茶", 100, 2);
-    const drink1 = new Drink("紅茶", 130, 2);
-    const drink2 = new Drink("ポカリ", 150, 2);
-    const drink3 = new Drink("ビール", 300, 2);
-    const drink4 = new Drink("hot茶", 100, 2, "hot");
-    const drink5 = new Drink("コンポタ", 130, 2, "hot");
+    // const drink1 = new Drink("紅茶", 130, 2);
+    const drink2 = new Drink("ポカリ", 110, 2);
+    // const drink3 = new Drink("ビール", 300, 2);
+    // const drink4 = new Drink("hot茶", 100, 2, "hot");
+    const drink5 = new Drink("コンポタ", 100, 2, "hot");
     const drink6 = new Drink("ココア", 150, 2, "hot");
-    const drink7 = new Drink("味噌汁", 300, 2, "hot");
+    // const drink7 = new Drink("味噌汁", 300, 2, "hot");
 
-    const drinks = [drink0, drink1, drink2, drink3, drink4, drink5, drink6, drink7];
+    const drinks = [drink0,drink2, drink5, drink6];
 
     // お金
     const oneThousand = new Money("1000円", 1000);
@@ -54,11 +54,11 @@
 
     let moneys = [oneThousand, oneHundred, fifth, ten];
 
-    const num = 12;
-    for(let i=0; i<num; i++){
-      const drink = new Drink();
-      drinks.push(drink);
-    }
+    // const num = 12;
+    // for(let i=0; i<num; i++){
+    //   const drink = new Drink();
+    //   drinks.push(drink);
+    // }
 
     mincost = drinks[0].cost;
     drinks.forEach(d => {
