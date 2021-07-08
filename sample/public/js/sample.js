@@ -35,13 +35,13 @@
     const getProductsD = document.getElementById("getProducts");
     const productsD = document.getElementById("products");
 
-    const drink0 = new Drink("お茶", 100, 2);
+    const drink0 = new Drink("tea", 100, 2);
     // const drink1 = new Drink("紅茶", 130, 2);
-    const drink2 = new Drink("ポカリ", 110, 2);
+    const drink2 = new Drink("pokari", 110, 2);
     // const drink3 = new Drink("ビール", 300, 2);
     // const drink4 = new Drink("hot茶", 100, 2, "hot");
-    const drink5 = new Drink("コンポタ", 100, 2, "hot");
-    const drink6 = new Drink("ココア", 150, 2, "hot");
+    const drink5 = new Drink("potage", 100, 2, "hot");
+    const drink6 = new Drink("cocoa", 150, 2, "hot");
     // const drink7 = new Drink("味噌汁", 300, 2, "hot");
 
     const drinks = [drink0,drink2, drink5, drink6];
@@ -80,6 +80,7 @@
       const productName = document.createElement('p');
 
       productItem.classList.add('productItem');
+      productItem.classList.add(`product-${d.name}`);
       product.classList.add('product');
       productName.textContent = d.name;
       product.appendChild(productName);
@@ -102,7 +103,7 @@
         const button = document.createElement('div');
 
 
-        drinkItem.id = `drink${index}`
+        drinkItem.id = `drink-${d.name}`
         drinkItem.classList.add('drinkItem');
         drink.classList.add('drink');
         drinkTemperature.classList.add('drinkTemperature');

@@ -4,10 +4,7 @@ fixture `Getting Started`// declare the fixture
   .page `http://localhost:8080/`;  // specify the start page
 
 
-test.before(async (t)=>{
-
-})
-('test', async t => {
+test('test', async (t: TestController) => {
   // 自動販売機の商品
   const tea = Selector("#drink-tea"); //100円　お茶
   const pokari = Selector("#drink-pokari"); //110円　ポカリ
