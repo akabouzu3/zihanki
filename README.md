@@ -1,41 +1,24 @@
-# Ruby on Rails チュートリアルのサンプルアプリケーション
+# QAインターン
 
-これは、次の教材で作られたサンプルアプリケーションです。   
-[*Ruby on Rails チュートリアル*](https://railstutorial.jp/)
-[Michael Hartl](http://www.michaelhartl.com/) 著
-
-## ライセンス
-
-[Ruby on Rails チュートリアル](https://railstutorial.jp/)内にある
-ソースコードはMITライセンスとBeerwareライセンスのもとで公開されています。
-詳細は [LICENSE.md](LICENSE.md) をご覧ください。
+気が利かず、使い方の説明がなくてすいませんでした！
 
 ## 使い方
 
-このアプリケーションを動かす場合は、まずはリポジトリを手元にクローンしてください。
-その後、次のコマンドで必要になる RubyGems をインストールします。
+zihanki/sample/　に移動する
 
 ```
-$ bundle install --without production
+$ cd sample
 ```
 
-その後、データベースへのマイグレーションを実行します。
+サーバーを起動する
+下のコマンドを実行すると　zihanki/sample/public/app.js が実行される
 
 ```
-$ rails db:migrate
+$ node app.js
 ```
 
-最後に、テストを実行してうまく動いているかどうか確認してください。
+zihanki/test2.ts のテストを起動する
 
 ```
-$ rails test
+$  testcafe chrome test2.ts
 ```
-
-テストが無事に通ったら、Railsサーバーを立ち上げる準備が整っているはずです。
-
-```
-$ rails server
-```
-
-詳しくは、[*Ruby on Rails チュートリアル*](https://railstutorial.jp/)
-を参考にしてください。
