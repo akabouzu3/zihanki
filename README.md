@@ -11,11 +11,13 @@
 $ cd sample
 ```
 
-サーバーを起動する。 http://localhost:8080/
+サーバーを起動する。 
 
 ```
 $ node app.js
 ```
+http://localhost:8080/
+
 
 zihanki/test2.ts のテストを起動する
 
