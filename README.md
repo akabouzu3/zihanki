@@ -11,7 +11,7 @@
 $ cd sample
 ```
 
-サーバーを起動する。
+サーバーを起動する。 http://localhost:8080/
 
 ```
 $ node app.js
