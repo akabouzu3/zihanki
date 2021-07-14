@@ -4,14 +4,14 @@
 
 ## 使い方
 
-zihanki/sample/　に移動する
+
+サーバを起動するために　zihanki/sample/　に移動する
 
 ```
 $ cd sample
 ```
 
-サーバーを起動する
-下のコマンドを実行すると　zihanki/sample/public/app.js が実行される
+サーバーを起動する。
 
 ```
 $ node app.js
