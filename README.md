@@ -18,8 +18,8 @@ $ node app.js
 ```
 http://localhost:8080/
 
-zihankiフォルダに戻る
-zihanki/test2.ts のテストを起動する
+zihankiフォルダに戻る。
+zihanki/test2.ts のテストを起動する。
 
 ```
 $  testcafe chrome test2.ts
